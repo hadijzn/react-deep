@@ -1,7 +1,10 @@
-import React from 'react'
-
+import BabyHome from './BabyHome'
+import contex from './CreateContex'
 export default function App() {
-  return (
-    <div>App</div>
-  )
+  const value = "what we want to use"
+    return (
+      <contex.Provider value={value}>
+            <BabyHome></BabyHome>
+      </contex.Provider>
+    )
 }
